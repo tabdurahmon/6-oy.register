@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .auth-bg {
+    @apply bg-[url('https://picsum.photos/1000/1300')] bg-no-repeat bg-cover bg-center;
+  }
+
+  .auth-container {
+    @apply grid grid-cols-1 lg:grid-cols-2 min-h-screen w-full;
+  }
+  .auth-left {
+    @apply hidden lg:block auth-bg;
+  }
+  .auth-right {
+    @apply auth-bg lg:bg-none bg-orange-200 grid place-items-center;
+  }
+}
